@@ -40,7 +40,10 @@ function showInfo(json){
 
     document.querySelector("#weather").classList.add('show');
 
+    // script.js
+
     document.querySelector('#title').innerHTML = `${json.city}, ${json.country}`;
+    document.querySelector('#country-flag').setAttribute('src', `https://flagcdn.com/w40/${json.country.toLowerCase()}.png`);
 
     document.querySelector('#temp_value').innerHTML = `${json.temp.toFixed(1).toString().replace('.', ',')} <sup>C°</sup>`;
     document.querySelector('#temp_description').innerHTML = `${json.description}`;
@@ -55,3 +58,4 @@ function showInfo(json){
 function showAlert(msg) {
     document.querySelector('#alert').innerHTML = msg;
 }
+

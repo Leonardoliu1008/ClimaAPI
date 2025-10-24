@@ -145,3 +145,30 @@ body {
     width: 200px;
     margin-top: 20px;
 }
+/* styles.css */
+
+#city-info {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza os itens */
+    gap: 10px; /* Espaço entre os itens */
+    margin-bottom: 5px; /* Margem que antes estava no #title */
+}
+
+#city-info i {
+    font-size: 22px; /* Tamanho do ícone de localização */
+    color: #372f3f; /* Cor do ícone */
+}
+
+#city-info img {
+    width: 30px; /* Tamanho da bandeira */
+    border-radius: 4px; /* Opcional: bordas levemente arredondadas */
+}
+
+/* Também precisamos ajustar a regra original do #title */
+#weather #title {
+    text-align: center;
+    margin-bottom: 0; /* Remove a margem, pois já a colocamos no #city-info */
+    font-weight: 600;
+    color: #372f3f;
+}
